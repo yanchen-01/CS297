@@ -1,4 +1,8 @@
-# SpartanGold
+# Project based on SpartanGold
+
+BioBlockchain
+
+## SpartanGold
 
 SpartanGold (SG) is a simplified blockchain-based cryptocurrency for education and experimentation.
 
@@ -11,14 +15,14 @@ Its design is *loosely* based on Bitcoin.  Like Bitcoin, SpartanGold uses a proo
 All of these features could be added to SpartanGold, but we want to make the design as simple and easy to modify as possible.
 
 
-## Using SpartanGold
+### Using SpartanGold
 
 There are two different approaches for running SpartanGold:
 
 1. In *single-threaded mode*, multiple miners and clients can run within the same JavaScript process.
 1. Using TcpMiner, the SpartanGold code runs within different JavaScript processes.
 
-### Single-threaded Mode
+#### Single-threaded Mode
 
 This mode is designed for quick and easy experimentation, avoiding a lot of unnecessary complexity.
 
@@ -34,7 +38,7 @@ One point to note is that Donald is given more mining power, represented as the 
 
 Note that the use of `miningRounds` as a way to specify mining power only works in single-threaded mode.
 
-### Multi-process Mode
+#### Multi-process Mode
 
 In this mode, each SpartanGold miner runs in its own JavaScript process.  You must specify a configuration file in JSON format.  If you look in the `sampleConfigs/` directory, you will see some JSON files that you can use to get started.
 
@@ -75,7 +79,7 @@ The two miners will now race to find proofs, sending their blocks back and forth
 
 While this mode is a little more complex, it creates a more realistic feel, and takes away some possible "cheats" that you can get away with in single-threaded mode.
 
-## Projects Based on SpartanGold
+### Projects Based on SpartanGold
 
 SpartanGold is designed to allow students to experiment with a Bitcoin-like cryptocurrency.  A few different projects have used it as the basis of a cryptocurrency prototype:
 
