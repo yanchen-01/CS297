@@ -42,7 +42,7 @@ public class MSG {
     static int N_TRIBES = 10;
     static int N_GENS_TRIBE = 750;
     static int N_GENS_COMBINED = 500;
-    static final File SEQUENCES_DIRF = new File("../msg/data");
+    static final File SEQUENCES_DIRF = new File("data");
     static final File BALIBASE_DIRF;
     static final File clwFile;
     static SequenceDataset clustalGappedDataset;
